@@ -63,6 +63,13 @@ body {
   height: auto;
 }
 
+/* 세로 비율 유지되는 이미지 */
+.background img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 /* 실제 콘텐츠 */
 .content {
   position: relative;
