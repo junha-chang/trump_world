@@ -57,8 +57,7 @@ body {
   width: 100%;
 }
 
-/* 세로 비율 유지되는 이미지 */
-.background img {
+.bg-section {
   display: block;
   width: 100%;
   height: auto;
