@@ -1,10 +1,9 @@
-/* 기본 세팅 */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* x, y, blur, 색상 */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 html,
@@ -14,11 +13,10 @@ body {
   font-family: sans-serif;
   position: relative;
   font-size: 10px;
-  overflow-y: auto; /* 세로 스크롤은 자동 */
-  overflow-x: hidden; /* 가로 넘침 방지 */
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
-/* 헤더 */
 .main-header {
   top: 50px;
   position: relative;
@@ -47,7 +45,7 @@ body {
   width: 30%;
   height: auto;
 }
-/* 배경을 실제로 넣는 이미지 박스 */
+
 .background {
   background-attachment: scroll;
   position: absolute;
@@ -65,14 +63,12 @@ body {
   height: 100%;
 }
 
-/* 세로 비율 유지되는 이미지 */
 .background img {
   display: block;
   width: 100%;
   min-height: 3700px;
 }
 
-/* 실제 콘텐츠 */
 .content {
   position: relative;
   z-index: 1;
@@ -100,7 +96,7 @@ body {
   color: #333;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  text-decoration: none; /* ✅ 이 줄 추가 */
+  text-decoration: none;
 }
 
 .fixed-buttons .btn:hover {
@@ -112,8 +108,6 @@ body {
   font-weight: 500;
   font-size: 3rem;
 }
-
-/*-------텍스트 구성을 위한 클래스 모음-----*/
 
 .text-subTitle {
   font-family: 'Noto Sans KR', sans-serif;
@@ -198,7 +192,6 @@ img {
   line-height: 1.5;
 }
 
-/*--------------이미지 섹션*/
 .image-section {
   width: 100%;
   margin-left: 50px;
@@ -226,8 +219,6 @@ img {
   height: auto;
 }
 
-/*--------------타임라인 섹션*/
-/* 1. 타임라인 전체를 중앙 정렬 */
 .timeline {
   position: relative;
   max-width: 1000px;
@@ -256,18 +247,16 @@ img {
   margin-bottom: 20px;
 }
 
-/* ⬅ 왼쪽 타이틀의 선: 가운데에서 왼쪽으로 뻗게 */
 .month-line.left {
   display: block;
   margin-left: 40px;
-  margin-right: 40%; /* ← 50% → 45% (조금 더 중앙으로) */
-  transform: translateX(43%); /* ← 균형 맞춤 */
+  margin-right: 40%;
+  transform: translateX(43%);
 }
 
-/* ➡ 오른쪽 타이틀의 선: 가운데에서 오른쪽으로 뻗게 */
 .month-line.right {
   display: block;
-  margin-left: 40%; /* ← 50% → 45% */
+  margin-left: 40%;
   margin-right: auto;
   transform: translateX(-73%);
 }
@@ -335,12 +324,12 @@ img {
   font-weight: 50;
 }
 .center-line {
-  position: absolute; /* ← fixed → absolute */
-  top: 2400px; /* ← 원하는 위치로 조정 */
+  position: absolute;
+  top: 2400px;
   left: 51%;
   transform: translateX(-50%);
-  height: 800px; /* ← 줄의 세로 길이 */
-  z-index: 0; /* 콘텐츠보다 뒤에, 배경보다 위 */
+  height: 800px;
+  z-index: 0;
   pointer-events: none;
 }
 
